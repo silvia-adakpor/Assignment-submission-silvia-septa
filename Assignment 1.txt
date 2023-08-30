@@ -1,0 +1,56 @@
+QUESTION 1: 
+GIT is a version control system that allows developers track changes made to their code over time.
+what does it solve in the context of software development?
+a. GIT allows for collaboration as it allows multiple developers work on parallel features simultaneously from any part of the world breaking physical barriers.
+b. GIT allows developers create branches to do bug fixes, new features etc without affecting the main codebase
+c. GIT allows developers to track changes made as it records modifications made over time
+d. GIT repositories help with backup in case of loss of data
+e. GIT commit provides historical record of why changes were made. this is really helpful for future developers who may be working on a past project
+
+
+QUESTION 2: 
+GIT is a version control system which many developers use to manage their code locally (track changes in their code) while GitHub is a web-based platform that provides hosting for Git repositories with added collaboration features. Git is installed locally on the computer while GitHub is cloud based. so if your computer got damaged or stolen, you wouldn't have to worry about your files if they have been stored on the cloud.
+
+
+QUESTION 3:
+*Firstly, initialise the repository by using "git init" you can also use "git clone" to make a copy of an existing repository,
+*then add files by using "git add", 
+*save changes by using "git commit -m",
+*check the status of the repository by using "git status"
+*Create a remote repository (public) on Github
+*connect both your local and remote repositories by using "git remote" and pasting the remote repository link on git
+use "git push" stating the origin to push your file to your remote repository
+*To incorporate changes from the remote repository into your local repository, use the "git pull" command.
+Branching helps you to work on different features or fix bugs seperately. to do this, you can create a branch by using "git branch" and you can switch to it using "git checkout"
+when work is completed on a branch, you can merge it back into the main branch by using "git merge"
+
+
+QUESTION 4:
+A Git repository tracks and saves the history of all changes made to the files in a Git project. It is a data structure used in the version control system called Git that helps to manage and track changes to a set of files over time, allowing multiple people to collaborate on a project and keep track of changes made to those files. 
+
+it does this storage amd managing of versions of files through:
+1. Version History: Each change is recorded as a commit, which includes information about what changes were made, who made them, and when they were made. A commit represents a snapshot of the entire project at a certain point in time. 
+2. References: Git uses references (usually called "branches" or "tags") to keep track of specific commits. Branches represent a series of commits and can diverge from one another as development progresses. Tags, on the other hand, are used to mark specific commits as significant points in the project's history, such as releases.At the core of Git's versioning mechanism is a tree-like structure that represents the hierarchy of files and directories in the project.
+3. Remote Repositories: Git repositories can be hosted on remote servers like GitHub. These remote repositories provide a centralized location for collaboration and sharing code with others.
+4. Distributed: Each contributor to a Git repository has a full copy of the repository, which means that even if a central server goes down, everyone still has access to the entire history and can work independently.
+
+
+
+QUESTION 5:
+A commit represents a snapshot of the entire project at a certain point in time.  Each commit contains information about the changes made to the files, the author, the date, and a unique identifier (a hash).
+
+
+
+QUESTION 6:
+Branching in Git means creating separate lines of development within a repository. it helps developers to create branches to do bug fixes, new features etc without affecting the main codebase as each branch represents a distinct version of your project. it also fosters collaboration, experimentation, and organization in software development.
+The default branch is also known as the main/master branch,  It's the starting point for new branches and typically contains the most up-to-date and bug-free code.To work on a new feature or fix, you create a new branch derived from the main branch.You can switch between branches using the "git checkout" command. This allows you to work on different features or fixes independently. Once you've completed your work on the new feature or fix, you can merge the changes back into the main branch using the "git merge" command.  you can also delete a branch by using the "git branch -d" command.
+
+How can branching be useful in collaborative development?
+1. Branching provides flexibility: Each developer can work on their own branch, this prevents conflicts and allows developers to experiment freely without affecting the stability of the main branch. 
+2. Increased speed: With branching, multiple developers can work on different features or bug fixes simultaneously. This parallel development speeds up the overall progress of the project and ensures that the development team can tackle multiple tasks at once.
+3. Feature Development and bug fixes: Each new feature can be developed in its own branch. This makes it easier to track progress, review changes, and collaborate on specific features without disrupting the main codebase.
+Branches are great for isolating bug fixes. Developers can create a branch specifically for fixing a certain issue, allowing them to work on the fix without affecting other parts of the project. Once the fix is tested and validated, it can be merged back into the main codebase.
+4. Reviews: Branches help code reviews by providing a clear context for the changes being proposed. Reviewers can easily see the differences between the branch and the main codebase, making the review process more efficient.
+5.Developers can use branches to experiment with new ideas, techniques, or approaches without affecting the stability of the main project. 
+6. In case critical issues arise in the main codebase, a hotfix branch can be created to address the problem urgently. Once fixed and tested, the hotfix can be merged into both the main branch and the release branches.
+7. Versioning and History: Each branch represents a snapshot of the code at a specific point in time. This allows you to maintain a history of changes and easily revert to previous states if needed.
